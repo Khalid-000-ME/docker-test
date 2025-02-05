@@ -476,9 +476,7 @@ def delete_activity(activity_id):
     
     return jsonify({"message": "Activity deleted successfully."}), 200
 
-# End of the activities part.
-
 
 if __name__ == '__main__':
-    PORT = int(os.environ.get("PORT", 8000))  # Railway provides a PORT env variable
+    PORT = int(os.environ.get("PORT", 8000))
     app.run(host="0.0.0.0", port=PORT)
